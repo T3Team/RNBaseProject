@@ -134,6 +134,14 @@ android {
             }
         }
     }
+    //渠道号
+    productFlavors {
+        dev {}       //开发版本，不要删除 否则有影响
+//        tencent {}   //腾讯应用宝
+//        baidu {}     //百度助手
+//        xiaomi {}    //小米应用商店
+//        huawei {}  //华为应用市场
+    }
 }
 
 dependencies {
