@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {View,} from 'react-native';
+import {View} from 'react-native';
 import PageRegister from './src/PageRegister';
 
 export default class App extends PureComponent {
@@ -14,6 +14,7 @@ export default class App extends PureComponent {
     }
 
     componentDidMount() {
+
     }
 
     _renderAppPageRegister = () => {

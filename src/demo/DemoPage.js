@@ -1,33 +1,40 @@
 import React from 'react';
-import {StyleSheet, Text, View,} from 'react-native';
+import {StyleSheet,} from 'react-native';
 import BasePage from '../base/BasePage';
 import LibContainer from '../lib/LibContainer';
-import {Header} from 'react-native-elements';
+import {Button,} from 'react-native-elements';
 
 export default class DemoPage extends BasePage {
+
     render() {
         return (
             <LibContainer style={styles.container}
-                          topColor={'#496fc2'}
+                          isTabMode={true}
             >
-                <Header
-                    leftComponent={{icon: 'arrow-back', color: '#fff'}}
-                    centerComponent={{
-                        text: 'Demo Page',
-                        style: {color: '#fff'},
+                <Button
+                    title={'react-native-elements'}
+                    buttonStyle={{
+                        backgroundColor: 'pink',
+                        height: 48,
+                        borderColor: 'transparent',
+                        borderWidth: 1,
+                        borderRadius: 5,
+                        marginTop: 20,
                     }}
+                    onPress={() => {}}
                 />
-                <Text style={{color: 'red', fontSize: 18}}>{'Demo Page'}</Text>
-                <View style={{
-                    width: '100%',
-                    height: '20%',
-                    backgroundColor: 'yellow',
-                }}></View>
-                <View style={{
-                    width: '100%',
-                    height: '20%',
-                    backgroundColor: 'red',
-                }}></View>
+                <Button
+                    title={'图片(Image)'}
+                    buttonStyle={{
+                        backgroundColor: 'pink',
+                        height: 48,
+                        borderColor: 'transparent',
+                        borderWidth: 1,
+                        borderRadius: 5,
+                        marginTop: 20,
+                    }}
+                    onPress={() => {this._navigateTo('ImagePage');}}
+                />
             </LibContainer>
         );
     }
@@ -36,6 +43,5 @@ export default class DemoPage extends BasePage {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        //alignItems: 'center',
     },
 });

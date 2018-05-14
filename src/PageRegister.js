@@ -1,11 +1,10 @@
 import React from 'react';
-import {createStackNavigator, createBottomTabNavigator} from 'react-navigation'; //https://reactnavigation.org/
+import {createStackNavigator,} from 'react-navigation'; //https://reactnavigation.org/
 import StackViewStyleInterpolator from 'react-navigation/src/views/StackView/StackViewStyleInterpolator';
 import BasePage from './base/BasePage';
-import DemoPage from './demo/DemoPage';
-import HeaderMainPage from './demo/header/HeaderMainPage';
-import Tab01Page from './demo/tab/Tab01Page';
-import Tab02Page from './demo/tab/Tab02Page';
+import DemoTabNavigator from './demo/DemoTabNavigator';
+import Tab03Page from './demo/tab/Tab03Page';
+import ImagePage from './demo/imgage/ImagePage';
 
 export default class PageRegister extends BasePage {
 
@@ -24,10 +23,9 @@ export default class PageRegister extends BasePage {
     }
 }
 const DemoRouteConfigs = {
-    DemoPage: {screen: DemoPage},
-    HeaderMainPage: {screen: HeaderMainPage},
-    Tab01Page: {screen: Tab01Page},
-    Tab02Page: {screen: Tab02Page},
+    DemoTabNavigator: {screen: DemoTabNavigator},
+    Tab03Page: {screen: Tab03Page},
+    ImagePage:{screen:ImagePage}
 };
 const RouteConfigs = {
     ...DemoRouteConfigs,
@@ -38,13 +36,13 @@ const NavigationConfig = {
         screenInterpolator: StackViewStyleInterpolator.forHorizontal,
     }),
     navigationOptions: {
-        gesturesEnabled: false// 页面手势返回功能，iOS默认打开，android默认关闭，这里全部打开
+        gesturesEnabled: false,// 页面手势返回功能，iOS默认打开，android默认关闭，这里全部关闭
     },
 };
-const MyStackNavigator = createBottomTabNavigator(
+const MyStackNavigator = createStackNavigator(
     RouteConfigs,
     {
-        initialRouteName: 'DemoPage',
+        initialRouteName: 'Tab03Page',
         ...NavigationConfig,
     },
 );

@@ -13,17 +13,19 @@ export default class LibContainer extends React.PureComponent {
     static propTypes = {
         topColor: PropTypes.string,
         bottomColor: PropTypes.string,
+        isTabMode: PropTypes.bool,
     };
 
     static defaultProps = {
         topColor: '#ffffff',
         bottomColor: '#ffffff',
+        isTabMode: false,
     };
-
-    render() {
+    _renderSafeAreaView = () => {
         return (
             <View
                 {...this.props}
+                style={{flex: 1}}
             >
                 <View style={{
                     position: 'absolute',
@@ -36,7 +38,7 @@ export default class LibContainer extends React.PureComponent {
                     position: 'absolute',
                     bottom: 0,
                     width: '100%',
-                    height: isNotIPhoneX ? 0 : 34,
+                    height: this.props.isTabMode || isNotIPhoneX ? 0 : 34,
                     backgroundColor: this.props.bottomColor,
                 }}/>
                 <SafeAreaView
@@ -46,5 +48,9 @@ export default class LibContainer extends React.PureComponent {
                 </SafeAreaView>
             </View>
         );
+    };
+
+    render() {
+        return this._renderSafeAreaView();
     }
 }
