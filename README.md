@@ -10,18 +10,18 @@
 
 
 
-####项目打开方式：
+#### 项目打开方式：
 
     推荐使用IDEA工具Open打开项目根目录即可，直接在IDEA中开发
 
-####项目运行方式：
+#### 项目运行方式：
 	1.以前的版本，先删除老的第三方组件：把node_modules这个目录删掉
 	2.在项目根目录下运行yarn install
 	3.npm start启动react native服务
 	4.启动Android应用：使用appStart.sh脚本来运行安装
 	5.启动iOS应用：使用xcode打开ios目录，点击运行即可
 
-####js代码规范
+#### js代码规范
 
 ```
 //待完善
@@ -42,11 +42,11 @@
 
 
 
-####git规范
+#### git规范
 	1.同一分支内使用rebase操作，不同分支间合并使用merge操作。
 	2.功能较复杂的项目单独拉取分支开发
 
-####处理记录
+####  处理记录
 	icon、启动页替换：
 	    iOS:
 	    icon替换Images.xcassets/AppIcon.appiconset中对应文件
@@ -55,7 +55,7 @@
 	    android:
 	    替换mipmap-hdpi、mipmap-xdpi、mipmap-xxdpi中文件
 
-####关于项目打包
+#### 关于项目打包
 
 
 	打包版本号规则：
@@ -64,7 +64,7 @@
 	对应的版本code 10200 规则就是x.xx.xx,首位自然数记录 后面都是两位数标识（0对应是00,1对应是01） 
 
 ​		
-####疑难问题汇总
+#### 疑难问题汇总
 
 ###### iOS报clang-6.0: error: cannot specify -o when generating multiple output files
     原因：
