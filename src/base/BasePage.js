@@ -1,4 +1,5 @@
 import React from 'react';
+import {CommonHeader} from '../lib/LibHeader';
 
 let _this;
 let _lastBackPressed;
@@ -18,6 +19,13 @@ export default class BasePage extends React.PureComponent {
         //TODO  add 统计相关等
     }
 
+    _renderCommonHeader = (title, isShowLeft = true) => {
+        return ( <CommonHeader
+            isShowLeft={isShowLeft}
+            centerTitle={title}
+            leftOnPress={() => this._goBack()}
+        />);
+    };
     /**页面跳转**/
 
     _goBack = () => {
@@ -33,9 +41,9 @@ export default class BasePage extends React.PureComponent {
      * @param page  字符串  在PageRegister.js中MyStackNavigator注册
      * @private
      */
-    _navigateTo(page) {
+    _navigateTo = (page) => {
         this.props.navigation.navigate(page);
-    }
+    };
 
     /**
      * 页面跳转并传值
@@ -43,18 +51,18 @@ export default class BasePage extends React.PureComponent {
      * @param data json格式数据  {code:1,name:'test'}
      * @private
      */
-    _navigateWithData(page, data) {
+    _navigateWithData = (page, data) => {
         this.props.navigation.navigate(page, data);
-    }
+    };
 
     /**
      * 页面跳转
      * @param page  字符串  在PageRegister.js中MyStackNavigator注册
      * @private
      */
-    _pushTo(page) {
+    _pushTo = (page) => {
         this.props.navigation.push(page);
-    }
+    };
 
     /**
      * 页面跳转并传值
@@ -62,12 +70,12 @@ export default class BasePage extends React.PureComponent {
      * @param data json格式数据  {code:1,name:'test'}
      * @private
      */
-    _pushWithData(page, data) {
+    _pushWithData = (page, data) => {
         this.props.navigation.push(page, data);
-    }
+    };
 
     /**获取页面传值**/
-    _getPageParam(paramName, defaultValue) {
+    _getPageParam = (paramName, defaultValue) => {
         return this.props.navigation.getParam(paramName, defaultValue);
-    }
+    };
 }

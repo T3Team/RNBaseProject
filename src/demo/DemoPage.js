@@ -10,7 +10,10 @@ export default class DemoPage extends BasePage {
         return (
             <LibContainer style={styles.container}
                           isTabMode={true}
+                          topColor={'#496fc2'}
             >
+
+                {this._renderCommonHeader('Demo', false)}
                 <Button
                     title={'react-native-elements'}
                     buttonStyle={{
@@ -34,6 +37,18 @@ export default class DemoPage extends BasePage {
                         marginTop: 20,
                     }}
                     onPress={() => {this._navigateTo('ImagePage');}}
+                />
+                <Button
+                    title={'Header'}
+                    buttonStyle={{
+                        backgroundColor: 'pink',
+                        height: 48,
+                        borderColor: 'transparent',
+                        borderWidth: 1,
+                        borderRadius: 5,
+                        marginTop: 20,
+                    }}
+                    onPress={() => {this._navigateTo('HeaderMainPage');}}
                 />
             </LibContainer>
         );

@@ -553,13 +553,6 @@ aproba@^1.0.3:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/aproba/download/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
 
-apsl-react-native-button@^3.1.1:
-  version "3.1.1"
-  resolved "http://registry.npm.taobao.org/apsl-react-native-button/download/apsl-react-native-button-3.1.1.tgz#313764d84cd9a429d14b329db6639b2c683266a7"
-  dependencies:
-    lodash.isequal "^4.1.4"
-    prop-types "^15.5.10"
-
 arch@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/arch/download/arch-2.1.0.tgz#3613aa46149064b3c1f0607919bf1d4786e82889"
@@ -3341,10 +3334,6 @@ lodash.isempty@^4.4.0:
   version "4.4.0"
   resolved "http://registry.npm.taobao.org/lodash.isempty/download/lodash.isempty-4.4.0.tgz#6f86cbedd8be4ec987be9aaf33c9684db1b31e7e"
 
-lodash.isequal@^4.1.4:
-  version "4.5.0"
-  resolved "http://registry.npm.taobao.org/lodash.isequal/download/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
-
 lodash.pad@^4.1.0:
   version "4.5.1"
   resolved "http://registry.npm.taobao.org/lodash.pad/download/lodash.pad-4.5.1.tgz#4330949a833a7c8da22cc20f6a26c4d59debba70"
@@ -4289,13 +4278,13 @@ react-native-elements@0.19.1:
     opencollective "^1.0.3"
     prop-types "^15.5.8"
 
-react-native-image-progress@^1.1.0:
+react-native-image-progress@1.1.0:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/react-native-image-progress/download/react-native-image-progress-1.1.0.tgz#737140d699fb3fb107ec70615736dfdc2eef7b35"
   dependencies:
     prop-types "^15.5.10"
 
-react-native-progress@^3.4.0:
+react-native-progress@3.4.0:
   version "3.4.0"
   resolved "http://registry.npm.taobao.org/react-native-progress/download/react-native-progress-3.4.0.tgz#c002e6efb2f0b82dd6889510e669c492da2718ac"
   dependencies:

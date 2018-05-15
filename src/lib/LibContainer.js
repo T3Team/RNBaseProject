@@ -31,7 +31,7 @@ export default class LibContainer extends React.PureComponent {
                     position: 'absolute',
                     top: 0,
                     width: '100%',
-                    height: 44,
+                    height: this.props.isTabMode || isNotIPhoneX ? 0 : 44,
                     backgroundColor: this.props.topColor,
                 }}/>
                 <View style={{

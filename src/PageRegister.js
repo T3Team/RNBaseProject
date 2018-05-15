@@ -5,6 +5,7 @@ import BasePage from './base/BasePage';
 import DemoTabNavigator from './demo/DemoTabNavigator';
 import Tab03Page from './demo/tab/Tab03Page';
 import ImagePage from './demo/imgage/ImagePage';
+import HeaderMainPage from './demo/header/HeaderMainPage';
 
 export default class PageRegister extends BasePage {
 
@@ -25,7 +26,8 @@ export default class PageRegister extends BasePage {
 const DemoRouteConfigs = {
     DemoTabNavigator: {screen: DemoTabNavigator},
     Tab03Page: {screen: Tab03Page},
-    ImagePage:{screen:ImagePage}
+    ImagePage: {screen: ImagePage},
+    HeaderMainPage: {screen: HeaderMainPage},
 };
 const RouteConfigs = {
     ...DemoRouteConfigs,

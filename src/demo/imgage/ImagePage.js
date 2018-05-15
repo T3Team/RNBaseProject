@@ -19,7 +19,10 @@ export default class ImagePage extends BasePage {
 
     render() {
         return (
-            <LibContainer>
+            <LibContainer
+                topColor={'#496fc2'}
+            >
+                {this._renderCommonHeader('图片')}
                 <ScrollView style={styles.container}>
                     <Text>加载网络图片（注意：静态图片不需要指定大小。但网络图片需要）</Text>
                     <ImageWithProgress

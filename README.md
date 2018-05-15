@@ -25,7 +25,7 @@
 
 ```
 //待完善
- IDEA导入根目录下cric_js.xml的js规范,操作如下：
+ IDEA导入根目录下rn_base_js.xml的js规范,操作如下：
     1.打开Preferences->Editor->Code Style->JavaScript
     2.点击Scheme右边设置按钮，import scheme来导入IDEA设置
 
