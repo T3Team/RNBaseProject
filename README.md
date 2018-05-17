@@ -8,6 +8,10 @@
 //iOS中文输入异常，待官方解决   https://github.com/facebook/react-native/pull/18456/files
 ```
 
+#### 相关第三方库说明
+
+- UI库：目前主要按需要适当引入https://github.com/react-native-training/react-native-elements 相关组件，其他库可参考
+
 
 
 #### 项目打开方式：
