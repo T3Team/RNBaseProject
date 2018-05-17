@@ -6,6 +6,10 @@ import DemoTabNavigator from './demo/DemoTabNavigator';
 import Tab03Page from './demo/tab/Tab03Page';
 import ImagePage from './demo/imgage/ImagePage';
 import HeaderMainPage from './demo/header/HeaderMainPage';
+import TestElementsPage from './demo/ui/elements/TestElementsPage';
+import TestAvatarPage from './demo/ui/elements/TestAvatarPage';
+import TestSamplePage from './demo/ui/elements/TestSamplePage';
+import TestCardPage from './demo/ui/elements/TestCardPage';
 
 export default class PageRegister extends BasePage {
 
@@ -28,6 +32,10 @@ const DemoRouteConfigs = {
     Tab03Page: {screen: Tab03Page},
     ImagePage: {screen: ImagePage},
     HeaderMainPage: {screen: HeaderMainPage},
+    TestElementsPage: {screen: TestElementsPage},
+    TestAvatarPage: {screen: TestAvatarPage},
+    TestSamplePage: {screen: TestSamplePage},
+    TestCardPage: {screen: TestCardPage},
 };
 const RouteConfigs = {
     ...DemoRouteConfigs,

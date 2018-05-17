@@ -5,6 +5,7 @@ const Images = {
         hanImg: require('./imgs/han.gif'),
         bgImg: require('./imgs/image_bg.png'),
         zhanImg: require('./imgs/zhan.png'),
+        skyImgPixabay: require('./imgs/sky-3389832_640.jpg'),
     },
 
 };

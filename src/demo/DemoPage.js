@@ -24,7 +24,7 @@ export default class DemoPage extends BasePage {
                         borderRadius: 5,
                         marginTop: 20,
                     }}
-                    onPress={() => {}}
+                    onPress={() => {this._navigateTo('TestElementsPage');}}
                 />
                 <Button
                     title={'图片(Image)'}
