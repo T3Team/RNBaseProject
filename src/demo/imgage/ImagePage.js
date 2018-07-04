@@ -147,19 +147,4 @@ const styles = StyleSheet.create({
     blank: {
         height: 20,
     },
-    button: {
-        height: 30,
-        width: 150,
-        marginTop: 10,
-        marginLeft: 10,
-        justifyContent: 'center',
-        alignItems: 'center',
-        overflow: 'hidden', // overflow属性规定当内容溢出元素框时发生的事情 http://www.w3school.com.cn/cssref/pr_pos_overflow.asp
-        borderRadius: 4,
-        backgroundColor: '#057afb',
-    },
-    button_text: {
-        fontSize: 14,
-        color: 'white',
-    },
 });

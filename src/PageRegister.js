@@ -10,6 +10,7 @@ import TestElementsPage from './demo/ui/elements/TestElementsPage';
 import TestAvatarPage from './demo/ui/elements/TestAvatarPage';
 import TestSamplePage from './demo/ui/elements/TestSamplePage';
 import TestCardPage from './demo/ui/elements/TestCardPage';
+import CallApiPage from './demo/http/CallApiPage';
 
 export default class PageRegister extends BasePage {
 
@@ -36,6 +37,7 @@ const DemoRouteConfigs = {
     TestAvatarPage: {screen: TestAvatarPage},
     TestSamplePage: {screen: TestSamplePage},
     TestCardPage: {screen: TestCardPage},
+    CallApiPage: {screen: CallApiPage},
 };
 const RouteConfigs = {
     ...DemoRouteConfigs,

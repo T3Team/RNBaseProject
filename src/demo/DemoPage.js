@@ -50,6 +50,18 @@ export default class DemoPage extends BasePage {
                     }}
                     onPress={() => {this._navigateTo('HeaderMainPage');}}
                 />
+                <Button
+                    title={'http'}
+                    buttonStyle={{
+                        backgroundColor: 'pink',
+                        height: 48,
+                        borderColor: 'transparent',
+                        borderWidth: 1,
+                        borderRadius: 5,
+                        marginTop: 20,
+                    }}
+                    onPress={() => {this._navigateTo('CallApiPage');}}
+                />
             </LibContainer>
         );
     }
