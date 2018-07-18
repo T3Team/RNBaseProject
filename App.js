@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import {View} from 'react-native';
 import PageRegister from './src/PageRegister';
+import I18n from './src/translations/I18n';
 
 export default class App extends PureComponent {
 
@@ -14,7 +15,7 @@ export default class App extends PureComponent {
     }
 
     componentDidMount() {
-
+        I18n.locale = 'zh';
     }
 
     _renderAppPageRegister = () => {

@@ -7,6 +7,7 @@ import LibContainer from '../../lib/LibContainer';
 import TestApi from '../../api/TestApi';
 import BasePage from '../../base/BasePage';
 import ToastUtil from '../../util/ToastUtil';
+import I18n from '../../translations/I18n';
 
 export default class CallApiPage extends BasePage {
     state = {
@@ -42,6 +43,7 @@ export default class CallApiPage extends BasePage {
             let response = await TestApi.getTestRN();
             this.setState({getText: JSON.stringify(response.data)});
             ToastUtil.show(JSON.stringify(response.data));
+            ToastUtil.show(I18n.t('testText'));
         } catch (error) {
             ToastUtil.show(error);
         }
