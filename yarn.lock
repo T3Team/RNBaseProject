@@ -3820,8 +3820,8 @@ number-is-nan@^1.0.0:
   resolved "http://registry.npm.taobao.org/number-is-nan/download/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
 nwsapi@^2.0.0:
-  version "2.0.5"
-  resolved "http://registry.npm.taobao.org/nwsapi/download/nwsapi-2.0.5.tgz#3998cfe7a014600e5e30dedb1fef2a4404b2871f"
+  version "2.0.6"
+  resolved "http://registry.npm.taobao.org/nwsapi/download/nwsapi-2.0.6.tgz#5fb7f5b828b97fe1de47eb2a6f8703036b6cb71a"
 
 oauth-sign@~0.8.2:
   version "0.8.2"
@@ -4241,6 +4241,10 @@ react-lifecycles-compat@^3:
   version "3.0.4"
   resolved "http://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
+react-native-device-info@0.21.5:
+  version "0.21.5"
+  resolved "http://registry.npm.taobao.org/react-native-device-info/download/react-native-device-info-0.21.5.tgz#99478a2d68182e012297f2d63f2bd1b788106dee"
+
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/react-native-dismiss-keyboard/download/react-native-dismiss-keyboard-1.0.0.tgz#32886242b3f2317e121f3aeb9b0a585e2b879b49"
@@ -4303,6 +4307,10 @@ react-native-safe-area-view@^0.7.0:
   resolved "http://registry.npm.taobao.org/react-native-safe-area-view/download/react-native-safe-area-view-0.7.0.tgz#38f5ab9368d6ef9e5d18ab64212938af3ec39421"
   dependencies:
     hoist-non-react-statics "^2.3.1"
+
+react-native-sensitive-info@5.1.0:
+  version "5.1.0"
+  resolved "http://registry.npm.taobao.org/react-native-sensitive-info/download/react-native-sensitive-info-5.1.0.tgz#1655c482f99c80023a23b2d9adab1ae260b1988a"
 
 react-native-tab-view@^0.0.74:
   version "0.0.74"

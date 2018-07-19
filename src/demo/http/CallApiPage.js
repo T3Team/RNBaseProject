@@ -8,11 +8,19 @@ import TestApi from '../../api/TestApi';
 import BasePage from '../../base/BasePage';
 import ToastUtil from '../../util/ToastUtil';
 import I18n from '../../translations/I18n';
+import DeviceUniqueID from '../../util/DeviceUniqueID';
 
 export default class CallApiPage extends BasePage {
     state = {
         getText: '',
+        deviceUniqueID: '',
     };
+
+    componentWillMount() {
+        DeviceUniqueID.getDeviceUniqueID((value) => {
+            this.setState({deviceUniqueID: value});
+        });
+    }
 
     render() {
         return (
@@ -29,6 +37,9 @@ export default class CallApiPage extends BasePage {
                     }}
                     onPress={this._get.bind(this)}
                 />
+                <Text>
+                    {`设备唯一标识${this.state.deviceUniqueID}`}
+                </Text>
                 <Text>
                     {this.state.getText}
                 </Text>
