@@ -14,13 +14,14 @@ export default class TestAvatarPage extends BasePage {
             >
 
                 {this._renderCommonHeader('Avatar')}
-                <ScrollView> <Avatar
-                    small
-                    rounded
-                    source={{uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg'}}
-                    onPress={() => console.log('Works!')}
-                    activeOpacity={0.7}
-                />
+                <ScrollView>
+                    <Avatar
+                        small
+                        rounded
+                        source={{uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg'}}
+                        onPress={() => console.log('Works!')}
+                        activeOpacity={0.7}
+                    />
                     <Avatar
                         medium
                         source={{uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg'}}
@@ -50,15 +51,19 @@ export default class TestAvatarPage extends BasePage {
                     <Avatar
                         rounded
                         icon={{name: 'home'}}
-                        onPress={() => console.log("Works!")}
+                        onPress={() => console.log('Works!')}
                         activeOpacity={0.7}
-                        containerStyle={{flex: 2, marginLeft: 20, marginTop: 20}}
+                        containerStyle={{
+                            flex: 2,
+                            marginLeft: 20,
+                            marginTop: 20,
+                        }}
                     />
                     <Avatar
                         large
                         icon={{name: 'home', color: 'orange'}}
                         overlayContainerStyle={{backgroundColor: 'white'}}
-                        onPress={() => console.log("Works!")}
+                        onPress={() => console.log('Works!')}
                         activeOpacity={0.7}
                         containerStyle={{flex: 4, marginTop: 20}}
                     />
