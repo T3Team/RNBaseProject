@@ -2420,7 +2420,7 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-i18n-js@^3.0.11:
+i18n-js@3.0.11:
   version "3.0.11"
   resolved "http://registry.npm.taobao.org/i18n-js/download/i18n-js-3.0.11.tgz#f9e96bdb641c5b9d6be12759d7c422089987ef02"
 
@@ -3786,8 +3786,8 @@ npm-bundled@^1.0.1:
   resolved "http://registry.npm.taobao.org/npm-bundled/download/npm-bundled-1.0.3.tgz#7e71703d973af3370a9591bafe3a63aca0be2308"
 
 npm-packlist@^1.1.6:
-  version "1.1.10"
-  resolved "http://registry.npm.taobao.org/npm-packlist/download/npm-packlist-1.1.10.tgz#1039db9e985727e464df066f4cf0ab6ef85c398a"
+  version "1.1.11"
+  resolved "http://registry.npm.taobao.org/npm-packlist/download/npm-packlist-1.1.11.tgz#84e8c683cbe7867d34b1d357d893ce29e28a02de"
   dependencies:
     ignore-walk "^3.0.1"
     npm-bundled "^1.0.1"
@@ -4270,11 +4270,11 @@ react-native-elements@0.19.1:
     opencollective "^1.0.3"
     prop-types "^15.5.8"
 
-react-native-i18n@2.0.14:
-  version "2.0.14"
-  resolved "http://registry.npm.taobao.org/react-native-i18n/download/react-native-i18n-2.0.14.tgz#21503bd6cb21988d67aa6cfa39f495dede740325"
+react-native-i18n@2.0.15:
+  version "2.0.15"
+  resolved "http://registry.npm.taobao.org/react-native-i18n/download/react-native-i18n-2.0.15.tgz#09b5a9836116fa7dbd0054c46e2d1014c1ef3c65"
   dependencies:
-    i18n-js "^3.0.11"
+    i18n-js "3.0.11"
 
 react-native-image-progress@1.1.0:
   version "1.1.0"
